@@ -1,0 +1,10 @@
+class Solution:
+    def hasDuplicate(self, nums: List[int]) -> bool:
+        visited = set()
+        for x in nums:
+            if x in visited:
+                return True
+            else:
+                visited.add(x)
+        
+        return False
